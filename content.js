@@ -98,7 +98,7 @@ let contentTitle;
 console.log(document.cookie);
 function dynamicClothingSection(ob) {
   let boxDiv = document.createElement("div");
-  boxDiv.id = "box";
+  boxDiv.id = "box"; 
 
   let boxLink = document.createElement("a");
   // boxLink.href = '#'
@@ -210,7 +210,7 @@ contentTitle = [
       "https://i5.walmartimages.com/asr/a9319914-9372-43bf-9941-f26704a7728c.ea55b49b690ec2c377c99d8417461fdd.png?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
       "https://i5.walmartimages.com/asr/627ed40d-db7d-4644-a8db-d1080c0895ff.c85aa274a90c54190c572931cd9a2e96.png?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
       "https://i5.walmartimages.com/asr/7c0e8682-ecdd-4669-9d80-e6f5219609db.c3431804d7c2c184faa66b0e47256ab5.png?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
-      ],
+    ],
     "description": "Maybelline The Blushed Nudes Eyeshadow Palette, Maybelline The Blushed Nudes Eyeshadow Palette consists of 13 eye looks with duo, trip, and quad color combinations. All shades are highly pigmented and infused with rose gold pigments making it a Blushed Nude palette. This palette is the ultimate companion to create versatile eye makeup looks. Eyeshadow palette 12 shades of rose-infused nudes From bold beiges to tempting taupes Eyeshadow palette comes with brush applicator Limited edition",
     "size": [1, 1, 1, 1, 1],
     "isAccessory": false,

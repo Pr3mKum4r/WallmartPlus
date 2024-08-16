@@ -11,6 +11,32 @@ if(document.cookie.indexOf(',counter=')>=0)
 
 function dynamicContentDetails(ob)
 {
+    // Create the data to send in the POST request
+    let postData = {
+      description: ob.description + ob.name,    
+    };
+
+    // Create a new XMLHttpRequest object
+    let httpRequest = new XMLHttpRequest();
+
+    // Set up the request
+    httpRequest.open("POST", "http://127.0.0.1:3100/recommend/content_based_model", true);
+    httpRequest.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+    // Define a callback to handle the response
+    httpRequest.onreadystatechange = function () {
+      if (httpRequest.readyState === 4) {
+        if (httpRequest.status === 200) {
+          console.log("POST request successful: ", httpRequest.responseText);
+        } else {
+          console.log("POST request failed: ", httpRequest.status);
+        }
+      }
+    };
+
+    // Send the POST request with the data as a JSON string
+    httpRequest.send(JSON.stringify(postData));
+    
     let mainContainer = document.createElement('div')
     mainContainer.id = 'containerD'
     document.getElementById('containerProduct').appendChild(mainContainer);
